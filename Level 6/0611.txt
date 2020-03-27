@@ -1,0 +1,32 @@
+0611  ласс StringHelper 
+—делать класс StringHelper, у которого будут 2 статических метода: 
+String multiply(String s, int count) Ц возвращает строку повторенную count раз. 
+String multiply(String s) Ц возвращает строку повторенную 5 раз. 
+ѕример: јмиго -> јмигојмигојмигојмигојмиго 
+
+“ребовани€: 
+1.?ћетоды класса StringHelper должны возвращать строку. 
+2.?ћетоды класса StringHelper должны быть статическими. 
+3.?ћетоды класса StringHelper должны быть public. 
+4.?ћетод multiply(String s, int count) должен возвращать строку повторенную count раз. 
+5.?ћетод multiply(String s) должен возвращать строку повторенную 5 раз.
+
+public class StringHelper {
+    public static String multiply(String s) {
+        String result = "";
+        for (int i = 0; i < 5; i++)
+        result +=s;
+        return result;
+    }
+
+    public static String multiply(String s, int count) {
+        String result = "";
+        for (int j=0; j<count; j++)
+            result +=s;
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
